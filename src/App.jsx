@@ -19,7 +19,7 @@ function App() {
   
     if (isToggleOn) {
       try {
-        const response = await fetch('https://www.jokegenerator.click/api/cleanjoke', {
+        const response = await fetch('https://jokegenerator.click/api/cleanjoke', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ function App() {
       }
     } else {
       try {
-        const response = await fetch('https://www.jokegenerator.click/api/joke', {
+        const response = await fetch('https://jokegenerator.click/api/joke', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
