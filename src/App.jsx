@@ -63,7 +63,7 @@ function App() {
     <>
       <img className='smallWP' style={{ width: '100%', height: '100%', objectFit: 'cover'}} src='https://i.pinimg.com/originals/75/2a/bc/752abcae3eea76aa7484f5d97f882cf0.gif' />
       <img className='mediumWP' style={{ width: '100%', height: 'auto%', objectFit: 'cover'}} src="https://i.pinimg.com/originals/68/b5/80/68b5802287649ad7bb59cff215e28969.gif" />
-      <img className='mlWP' style={{ width: '100%', height: '100%', objectFit: 'fill'}} src="https://wallpaperaccess.com/full/1131274.jpg" />
+      <img className='mlWP' style={{ width: '100%', height: '100%', objectFit: 'fill'}} src="https://images.hdqwalls.com/wallpapers/landscape-night-moon-stars-uw.jpg" />
       <img className='largeWP' style={{ width: '100%', height: '100%', objectFit: 'cover'}} src="https://openseauserdata.com/files/dca95043e622749d823a49cc60a0d4b8.gif" />
       <div className="center" style={{ textAlign: 'center' }}>
         <p className="text-4xl mb-10 frontTextColor">Joke Generator</p>
