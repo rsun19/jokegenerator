@@ -43,11 +43,11 @@ code {
   .mediumWP {
     display: none;
   }
-  .largeWP {
+  .mlWP {
     display: none;
   }
-  .frontTextColor {
-    color: black !important;
+  .largeWP {
+    display: none;
   }
 }
 
@@ -58,16 +58,40 @@ code {
   .mediumWP {
     display: block !important;
   }
+  .mlWP {
+    display: none;
+  }
   .largeWP {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1001px) and (max-width: 1799px) {
   .smallWP {
     display: none;
   }
   .mediumWP {
+    display: none;
+  }
+  .mlWP {
+    display: block;
+  }
+  .largeWP {
+    display: none;
+  }
+  /* .frontTextColor {
+    color: black !important;
+  } */
+}
+
+@media only screen and (min-width: 1801px) {
+  .smallWP {
+    display: none;
+  }
+  .mediumWP {
+    display: none;
+  }
+  .mlWP {
     display: none;
   }
   .largeWP {

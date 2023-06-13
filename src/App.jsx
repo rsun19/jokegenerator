@@ -61,9 +61,10 @@ function App() {
 
   return (
     <>
-      <img className='smallWP' style={{ width: '100%', height: '100%', objectFit: 'cover'}} src='https://media.tenor.com/5f3s1LEfRb4AAAAC/living-wallpaper-moving-wallpaper.gif' />
-      <img className='mediumWP' style={{ width: '100%', height: '100%', objectFit: 'cover'}} src="https://thumbs.gfycat.com/EvenAgonizingCanvasback-size_restricted.gif" />
-      <img className='largeWP' style={{ width: '100%', height: '100%', objectFit: 'cover'}} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c2ad383c-7c26-4461-9fa6-262a71882b87/d50bwgl-cf02f614-d7c1-43cb-83bc-5ecebb4407e7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MyYWQzODNjLTdjMjYtNDQ2MS05ZmE2LTI2MmE3MTg4MmI4N1wvZDUwYndnbC1jZjAyZjYxNC1kN2MxLTQzY2ItODNiYy01ZWNlYmI0NDA3ZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.u_5UeT_9_I7IMo83QjfnvUYR6h1-hLOMfLZHS5yuUuU" />
+      <img className='smallWP' style={{ width: '100%', height: '100%', objectFit: 'cover'}} src='https://i.pinimg.com/originals/75/2a/bc/752abcae3eea76aa7484f5d97f882cf0.gif' />
+      <img className='mediumWP' style={{ width: '100%', height: 'auto%', objectFit: 'cover'}} src="https://i.pinimg.com/originals/68/b5/80/68b5802287649ad7bb59cff215e28969.gif" />
+      <img className='mlWP' style={{ width: '100%', height: '100%', objectFit: 'fill'}} src="https://wallpaperaccess.com/full/1131274.jpg" />
+      <img className='largeWP' style={{ width: '100%', height: '100%', objectFit: 'cover'}} src="https://openseauserdata.com/files/dca95043e622749d823a49cc60a0d4b8.gif" />
       <div className="center" style={{ textAlign: 'center' }}>
         <p className="text-4xl mb-10 frontTextColor">Joke Generator</p>
         <div className="flex items-center justify-center mb-10">
@@ -94,7 +95,7 @@ function App() {
           </div>
           <div className="ml-3 text-gray-700 font-medium frontTextColor">My boss is watching</div>
         </label>
-        <p className='mt-10 frontTextColor'>{ response }</p>
+        <p className='mt-10 frontTextColor font-medium'>{ response }</p>
       </div>
     </>
   );
