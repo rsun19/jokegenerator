@@ -60,7 +60,7 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <img className='smallWP' style={{ width: '100%', height: '100%', objectFit: 'cover'}} src='https://i.pinimg.com/originals/75/2a/bc/752abcae3eea76aa7484f5d97f882cf0.gif' />
       <img className='mediumWP' style={{ width: '100%', height: 'auto%', objectFit: 'cover'}} src="https://i.pinimg.com/originals/68/b5/80/68b5802287649ad7bb59cff215e28969.gif" />
       <img className='mlWP' style={{ width: '100%', height: '100%', objectFit: 'fill'}} src="https://images.hdqwalls.com/wallpapers/landscape-night-moon-stars-uw.jpg" />
@@ -97,7 +97,7 @@ function App() {
         </label>
         <p className='mt-10 frontTextColor font-medium'>{ response }</p>
       </div>
-    </>
+    </div>
   );
 }
 
