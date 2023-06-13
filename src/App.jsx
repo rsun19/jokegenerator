@@ -93,7 +93,7 @@ function App() {
             <div className={`block ${isToggleOn ? 'bg-green-500' : 'bg-gray-300'} w-14 h-8 rounded-full`} />
             <div className={`dot absolute left-1 top-1 ${isToggleOn ? 'bg-white' : 'bg-gray-400'} w-6 h-6 rounded-full transition-transform duration-300 ${isToggleOn ? 'translate-x-6' : 'translate-x-1'}`} />
           </div>
-          <div className="ml-3 text-gray-700 font-medium frontTextColor">My boss is watching</div>
+          <div className="ml-3 text-gray-700 font-medium frontTextColor">Clean joke filter</div>
         </label>
         <p className='mt-10 frontTextColor font-medium'>{ response }</p>
       </div>
