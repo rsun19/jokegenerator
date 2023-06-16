@@ -5,6 +5,11 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [isToggleOn, setIsToggleOn] = useState(false);
   const [response, setResponse] = useState('');
+  const [expanded, setExpanded] = useState(true);
+
+  const handleExpanded = () => {
+    setExpanded(!expanded);
+  }
 
   const handleSearchInputChange = (event) => {
     setSearchTerm(event.target.value);
@@ -95,7 +100,34 @@ function App() {
           </div>
           <div className="ml-3 text-gray-700 font-medium frontTextColor">Clean joke filter</div>
         </label>
-        <p className='mt-10 frontTextColor font-medium'>{ response }</p>
+        { response != '' && 
+          <div className="w-full rounded overflow-hidden shadow-lg mt-10 bg-gray-700">
+            <div style={{ padding: '10px' }}>
+                <p className="text-gray-700 text-base text-white">
+                  { response }
+                </p>
+            </div>
+          </div>
+        }
+        <div className="flex flex-col items-center">
+          <div className= {`${expanded ? 'w-full' : 'max-w-sm'} rounded overflow-hidden shadow-lg mt-10 bg-gray-700`}>
+            <div style={{ padding: expanded ? '15px 15px 0px 15px' : '0px' }}>
+                <p className="text-gray-700 text-base text-white" style={{ display: expanded ? 'inline' : 'none' }}>
+                  Note: I don't condone nor endorse any of the jokes
+                  above. The jokes in the "clean jokes filter" are cleaned using linguistic techniques that calculate the Levenshtein distance between unwanted and target words and
+                  a ML model trained on toxic wikipedia comments. The database of jokes were taken from <a target='_blank' style={{ color: 'lightblue' }} href='https://github.com/amoudgl/short-jokes-dataset'>here</a>.
+                  Learn more about the project on my <a target='_blank' style={{ color: 'lightblue' }} href='https://robertssun.me/portfoliodev/#/projects'>website</a>.
+                </p>
+            </div>
+            <div style={{ padding: '15px' }}>
+            <button onClick={handleExpanded}>
+              <p style={{ display: expanded ? 'none' : 'inline' }} className='pr-2 text-white'>Show Disclaimer</p>
+              <p style={{ display: expanded ? 'inline' : 'none' }} className='pr-2 text-white'>Hide Disclaimer</p>
+              {expanded ? '▲' : '▼'}
+            </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
